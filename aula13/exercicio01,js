@@ -1,0 +1,21 @@
+// 1 - criar um array com 10 produtos;
+// 2 - cria uma função arrow que exiba todos os itens do array
+// obs: 
+// utilize return 
+// const exibirProdutos = () => {}
+
+
+const hortFruit = ["Maçã","Banana","Laranja","Repolho","Nabo","Rabanete","Cenoura","Tomate","Batata","Uva"];
+
+//---- forma normal utilizando for e length ---//
+//for(let i = 0; i < hortFruit.length; i++) {
+//console.log(hortFruit[i]); 
+//}
+
+//-- Arrow function utilizando map ---//
+wwwwwwwwwwwconsole.log(hortFruit.map((exibirProdutos) => exibirProdutos));
+
+
+//-- tentativa 2 --//
+//hortFruit.map((exibirProdutos) => { return exibirProdutos.length})
+
