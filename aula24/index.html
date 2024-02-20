@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormuLários e Tabelas</title>
+</head>
+
+<body>
+
+  <center>
+
+    <header>
+      <h1> Formulários </h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="name">Nome :</label><br>
+        <input type="text" id="name" placeholder="Digite seu Nome"><br>
+        <hr />
+
+        <label for="lastname">Sobrenome:</label><br>
+        <input type="text" id="lastname" placeholder="Digite seu sobrenome"><br>
+        <hr />
+
+        <label for="email">E-mail :</label><br>
+        <input type="email" id="email" placeholder="Digite seu E-mail"><br>
+        <hr />
+
+        <label for="favcolor">Selecione sua cor favorita:</label><br>
+        <input type="color" id="favcolor"><br>
+        <hr />
+
+        <label for="birthday">Aniversário:</label><br>
+        <input type="date" id="birthday"><br>
+        <hr />
+
+        <label for="birthday">Digite seu Aniversário:</label><br>
+        <input type="datetime" id="birthday"><br>
+        <hr />
+
+        <label for="birthdaytime">Digite Sua data e Hora:</label><br>
+        <input type="datetime-local" id="birthdaytime"><br>
+        <hr />
+
+        <h2>Estados </h2>
+        <input type="checkbox" id="rj" value="1">
+        <label for="rj"> RJ</label><br>
+        <input type="checkbox" id="sp" value="2">
+        <label for="sp"> SP</label><br>
+        <input type="checkbox" id="mg" value="3">
+        <label for="mg"> MG</label>
+        <hr />
+
+        <h2>SEXO</h2>
+        <input type="radio" id="masculino" name="sexo" value="1">
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="sexo" value="2">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="outro" name="sexo" value="3">
+        <label for="outro">Outro</label><br>
+
+        <hr />
+        <label for="cars">Selecione Seu Carro:</label>
+        <select id="cars" name="cars">
+          <option value="1">Volvo</option>
+          <option value="2">Cherry</option>
+          <option value="3">Fiat</option>
+        </select>
+
+        <hr />
+        <label for="comentarios">Comentarios: </label><br>
+        <textarea name="message" rows="5" cols="30" maxlength="20">
+          </textarea>
+      </form>
+    </main>
+
+    <footer>
+      <p> &copy; Copyright - Todos os Direitos Reservados </p>
+    </footer>
+
+  </center>
+
+</body>
+
+</html>
