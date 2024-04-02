@@ -11,18 +11,49 @@
       box-sizing: border-box;
     }
 
-    body {
-
-    }
+    body {}
 
     header h1 {
       color: white;
       background-color: black;
-      padding-left: 1vh;
+      /*padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding: 60px 20px 45px 100px;*/
+
+      padding: 10% 20%;
       margin: 10px;
+      border: solid 3px blue;
+    }
+
+    main div.quadrado {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      margin: 10px;
+      padding: 10px;
+      border: solid 3px blue;
+      background-color: aqua;
+      width: 100vh;
+      height: 100vh;
+    }
+
+    .quadrado1,
+    .quadrado2,
+    .quadrado3 {
+      border: solid 3px rgb(0, 255, 60);
+      background: rgb(0, 0, 0);
+      background-color: bisque;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 0 50px;
+      border-top-right-radius: 50px;
     }
   </style>
+
   <title>Introdução CSS</title>
+
 </head>
 
 <body>
@@ -34,7 +65,15 @@
   <main>
     <div class="quadrado">
 
-    </div>
+      <div class="quadrado1"> Olá
+      </div>
+
+      <div class="quadrado2"> Olá
+      </div>
+
+      <div class="quadrado3"> Olá
+      </div>
+
   </main>
 
   <footer>
