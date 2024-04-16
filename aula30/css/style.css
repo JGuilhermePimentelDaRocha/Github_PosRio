@@ -178,12 +178,12 @@ nav input {
 
 /* TEXTO PRINCIPAL */
 
-header {
+section {
   /* EXERCICIO 4 - CENTRALIZAR TEXTO */
   text-align: center;
 }
 
-header h1 {
+section h1 {
   margin: 50px;
 }
 
