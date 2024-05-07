@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* EXERCICIO 3 - TROCAR FONTE */
+  font-family: "Montserrat", Montserrat;
+}
+
+/* MENU */
+.logo-menu {
+  margin-top: 25px;
+}
+
+.logo-menu img {
+  max-width: 150px;
+  max-height: 50px;
+}
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  /* EXERCICIO 1 - TROCAR COR DE FUNDO DE UM ELEMENTO */
+  background: #ffffff;
+}
+nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  /* EXERCICIO 2 - TROCAR COR DE TEXTO  DE UM ELEMENTO */
+  color: #201b5d;
+  text-decoration: none;
+  /* EXERCICIO 8 - ALTERAR UM TAMANHO DE UM ELEMENTO */
+  font-size: 11px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  background: #eb9312;
+}
+.nav-links .cursos-item {
+  display: none;
+}
+.nav-links .drop-menu {
+  /* EXERCICIO 9 - POSICIONAR UM ELEMENTO ABSOLUTAMENTE */
+  position: absolute;
+  background: #ffffff;
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 970px) {
+  .wrapper .btn {
+    display: block;
+  }
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #242526;
+    display: block;
+
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+  }
+  #menu-btn:checked ~ .nav-links {
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn {
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn {
+    display: block;
+  }
+  .nav-links li {
+    margin: 15px 10px;
+  }
+  .nav-links li a {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu {
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box {
+    max-height: 100%;
+  }
+  .nav-links .desktop-item {
+    display: none;
+  }
+  .nav-links .cursos-item {
+    display: block;
+    color: #201b5d;
+    font-size: 20px;
+    font-weight: 500;
+    /* EXERCICIO 7 - ADICIONAR UM PREENCHIMENTO AO ELEMENTO */
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .cursos-item:hover {
+    background: #ffffff;
+  }
+  .drop-menu li {
+    margin: 0;
+  }
+  .drop-menu li a {
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+nav input {
+  display: none;
+}
+
+/* BANNER */
+
+/* TEXTO PRINCIPAL */
+
+.section1 {
+  /* EXERCICIO 4 - CENTRALIZAR TEXTO */
+  text-align: center;
+}
+
+.section1 h1 {
+  margin: 50px;
+}
+
+.section2 {
+  text-align: center;
+  background-color: #005ba7;
+  padding: 30px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.card-text-section2 {
+  text-align: center;
+  background-color: #005ba7;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.card-text2-section2 {
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.section3-cursos {
+  text-align: center;
+  background-color: #ff9906;
+  color: #ffffff;
+  padding: 10px 0 300px 0;
+  font-size: 20px;
+}
+
+/* CARD FOTOS 1 */
+.card-content {
+  /* EXERCICIO 6 - ADCIONAR MARGEM AO ELEMENTO */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-img1,
+.card-img2 {
+  width: 900px;
+  height: 600px;
+  /* EXERCICIO 5 - ADCIONAR BORDA A UM ELEMENTO */
+  border: 10px transparent rgb(242, 240, 240);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.card-text {
+  padding: 0 5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  align-content: center;
+}
+
+/* CARD CURSOS */
+.card-content {
+  /* EXERCICIO 6 - ADCIONAR MARGEM AO ELEMENTO */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-img3 {
+  width: 300px;
+  height: 450px;
+  /* EXERCICIO 5 - ADCIONAR BORDA A UM ELEMENTO */
+  border: 10px transparent rgb(242, 240, 240);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  color: #000;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.card-img3 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-img3 button {
+  border-radius: 1rem;
+  background-color: #f2e205;
+  margin: 25px;
+  padding: 10px;
+}
+
+.card-text {
+  padding: 0 5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  align-content: center;
+}
+
+/* foooter */
+
+footer {
+  /* EXERCICIO 10 - ADCIONAR GRADIENTE DE FUNDO ELEMENTO */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(205, 18, 252) 100%
+  );
+}
+
+.footer-container {
+  display: flex;
+}
+
+.logo-footer {
+  margin: 25px;
+}
+
+.logo-footer img {
+  max-width: 150px;
+  max-height: 50px;
+}
