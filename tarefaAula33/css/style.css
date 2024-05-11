@@ -1,0 +1,81 @@
+/* Definindo estilos gerais (RESET DA PÁGINA) */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* ... outras propriedades do body */
+}
+
+/* Estilos para o menu de navegação */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 100px;
+  margin: 10px 0 10px 0;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 13px;
+}
+nav li {
+  list-style-type: none;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+/* Estilos para os cartões de conteúdo */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.card1 {
+  width: 300px;
+  height: 700px;
+  text-align: center;
+  background-color: rgb(4, 208, 21);
+}
+.card2 {
+  width: 300px;
+  height: 700px;
+  text-align: center;
+  background-color: rgb(208, 4, 4);
+}
+.card3 {
+  width: 300px;
+  height: 700px;
+  text-align: center;
+  background-color: rgb(4, 45, 208);
+}
+/* Estilos para o rodapé */
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
